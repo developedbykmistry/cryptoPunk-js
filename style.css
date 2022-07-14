@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+}
+
+header {
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoContainer img {
+    height: 70px;
+    width: 200px;
+}
+
+.searchbarContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.searchbar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    padding: 7px 15px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 25px;
+    margin-left: 5em;
+}
+
+.searchbar img {
+    height: 25px;
+    width: 25px;
+}
+
+.searchbar input {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.searchbar input::placeholder {
+    font-size: 14px;
+    color: rgb(177, 177, 177);
+}
+
+
+.navlist  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5em;
+    margin-right: 16em;
+}
+
+.navlist li {
+    list-style: none;
+    margin-right: 3em;
+}
+
+.navlist li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonContainer button {
+    width: 130px;
+    padding: 1em;
+    border-radius: 25px;
+    background: linear-gradient(to right top, #00c8e2, #00ffea);
+    font-weight: bolder;
+}
+
+.ethIcon {
+    height: 30px;
+    width: 30px;
+}
+
+.nftDisplayContainer {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    flex-direction: row;
+    padding: 1em;
+    border-top: 1px solid rgb(184, 184, 184);
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+.nftDisplay {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+.display-nft {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer img {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.text h3 {
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 10px;
+    color: rgb(179, 179, 179);
+}
+
+.text p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1em;
+    font-size: 20px;
+}
+
+.account-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 70px;
+    padding: .8em;
+    /* border: 1px solid #fff; */
+    border-radius: 15px;
+    margin-top: auto;
+    background-color: rgba(36, 36, 36, 0.589);
+}
+
+.account-detail img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.account-detail h3 {
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.socialIcons {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.socialIcons > div {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(201, 201, 201);
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialIcons svg {
+    height: 40px;
+    width: 40px;
+}
+
+.nftGridContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding: 1em;
+}
+
+.nftGridContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+.nftGridContainer {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.nft {
+    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(36, 36, 36, 0.589);
+    border-radius: 15px;
+    margin-right: 2em;
+}
+
+.nft img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 300px;
+    width: 350px;
+}
+
+.nft-info {
+    padding: .6em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nft-info h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.nft-info h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(179, 179, 179);
+}
+
+.nft-info p {
+    display: flex;
+    flex-direction: row;
+    margin-top: .7em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+.nft-info p img {
+    height: 25px;
+    width: 25px;
+}
